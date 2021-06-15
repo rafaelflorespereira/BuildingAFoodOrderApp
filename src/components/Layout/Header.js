@@ -8,7 +8,7 @@ const Header = (props) => {
   return <React.Fragment>
     <header className={classes.header}>
       <h1>React Meals</h1>
-      <HeaderCartButton />
+      <HeaderCartButton onOpenClick={props.onClickCart}/>
     </header>
     {/* When the class has a hyphen it needs be got like an array */}
     <div className={classes['main-image']}>
